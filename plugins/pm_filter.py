@@ -913,7 +913,7 @@ async def advantage_spell_chok(msg):
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     await msg.reply_sticker(sticker="CAACAgQAAxkBAAJQzmIZo8u3pHF8ulLUGT7dUeIjAAF78QACVQADjRtGJ-yIezShSzCbHgQ",
     reply_markup=InlineKeyboardMarkup(btn))
-
+one_button = InlineKeyboardMarkup([[InlineKeyboardButton("🔍 ɢᴏᴏɢʟᴇ", url="https://google.com/search"), InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs 😈", url="https://t.me/Bt_movies_hd")]])
 
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
