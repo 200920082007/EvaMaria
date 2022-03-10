@@ -904,15 +904,21 @@ async def advantage_spell_chok(msg):
         await k.delete()
         return
     SPELL_CHECK[msg.message_id] = movielist
-    btn = [[
-        InlineKeyboardButton(
-            text=movie.strip(),
-            callback_data=f"spolling#{user}#{k}",
-        )
-    ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply_sticker(sticker="CAACAgQAAxkBAAJQzmIZo8u3pHF8ulLUGT7dUeIjAAF78QACVQADjRtGJ-yIezShSzCbHgQ",
- one_button = InlineKeyboardMarkup([[InlineKeyboardButton("🔍 ɢᴏᴏɢʟᴇ", url="https://google.com/search"), InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs 😈", url="https://t.me/Bt_movies_hd")]])
+    if movielist:
+        one_button = InlineKeyboardMarkup([[InlineKeyboardButton("🔍 𝐺𝑜𝑜𝑔𝑙𝑒", url="https://google.com/search"), InlineKeyboardButton("𝑅𝑒𝑝𝑜𝑟𝑡 😈", url="https://t.me/Requestzonex")]])
+        k = await msg.reply("<b>𝖨 𝖢ᴏᴜʟᴅɴ'ᴛ 𝖥ɪɴᴅ 𝖠ɴʏᴛʜɪɴɢ 𝖱ᴇʟᴀᴛᴇᴅ ᴛᴏ Yᴏᴜʀ Qᴜᴇʀʏ</b>\n\n<b>𝖢ʜᴇᴄᴋ 𝖸ᴏᴜʀ 𝖲ᴘᴇʟʟɪɴɢ ɪɴ 𝖦ᴏᴏɢʟᴇ ᴀɴᴅ 𝖳ʀʏ 𝖠ɢᴀɪɴ. ♻️</b>\n\n<b>𝖲ᴛɪʟʟ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ɢᴇᴛ ᴛʜᴇ ғɪʟᴇ𝗌 ᴛʜᴇɴ Rᴇᴘᴏʀᴛ Hᴇʀᴇ 🍷</b>", reply_markup = one_button)
+        await asyncio.sleep(15)
+        await k.delete()
+        await msg.delete()
+        return
+    if not movielist:
+        one_button = InlineKeyboardMarkup([[InlineKeyboardButton("🔍 𝐺𝑜𝑜𝑔𝑙𝑒", url="https://google.com/search"), InlineKeyboardButton("𝑅𝑒𝑝𝑜𝑟𝑡 😈", url="https://t.me/Requestzonex")]])
+        k = await msg.reply("<b>𝖨 𝖢ᴏᴜʟᴅɴ'ᴛ 𝖥ɪɴᴅ 𝖠ɴʏᴛʜɪɴɢ 𝖱ᴇʟᴀᴛᴇᴅ ᴛᴏ Yᴏᴜʀ Qᴜᴇʀʏ </b>\n\n<b>𝖢ʜᴇᴄᴋ 𝖸ᴏᴜʀ 𝖲ᴘᴇʟʟɪɴɢ ɪɴ 𝖦ᴏᴏɢʟᴇ ᴀɴᴅ 𝖳ʀʏ 𝖠ɢᴀɪɴ. ♻️</b>\n\n<b>𝖲ᴛɪʟʟ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ɢᴇᴛ ᴛʜᴇ ғɪʟᴇ𝗌 ᴛʜᴇɴ Rᴇᴘᴏʀᴛ Hᴇʀᴇ 🍷</b>", reply_markup = one_button)
+        await asyncio.sleep(15)
+        await k.delete()
+        await msg.delete()
+        return
+
 
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
