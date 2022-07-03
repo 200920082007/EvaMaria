@@ -10,12 +10,22 @@ class script(object):
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
 ✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v2"""
-    SOURCE_TXT = """<b>NOTE:</b>
+   VARMA_TXT = """𝔻𝕖𝕧𝕖𝕝𝕠𝕡𝕖𝕣: <a href='tg://user?:id=981115467'>𝚃𝚑𝚒𝚜 𝙿𝚎𝚛𝚜𝚘𝚗</a>
+
+𝕊𝕦𝕡𝕡𝕠𝕣𝕥: <a href='https://t.me/ThoughtsByVarma'>𝙹𝚘𝚒𝚗 𝙷𝚎𝚛𝚎</a>
+
+𝕃𝕚𝕓𝕣𝕒𝕣𝕪: 𝙿𝚢𝚛𝚘𝚐𝚛𝚊𝚖
+
+𝔻𝕒𝕥𝕒𝕓𝕒𝕤𝕖: 𝙼𝚘𝚗𝚐𝚘𝙳𝙱
+
+𝕊𝕖𝕣𝕧𝕖𝕣: 𝙷𝚎𝚛𝚘𝚔𝚞"""
+
+ SOURCE_TXT = """<b>NOTE:</b>
 - Ron is a open source project. 
 - Support - https://t.me/ThoughtsByVarma  
 
 <b>DEVS:</b>
-- <a>@VarMarvel</a>"""
+- <a>@Varma2006</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and Ron will respond whenever a keyword is found the message
@@ -44,11 +54,7 @@ class script(object):
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
-    VARMA_TXT = """𝔻𝕖𝕧𝕖𝕝𝕠𝕡𝕖𝕣: <a href='tg://user?:id=981115467'>𝚃𝚑𝚒𝚜 𝙿𝚎𝚛𝚜𝚘𝚗</a>
-𝕊𝕦𝕡𝕡𝕠𝕣𝕥: <a href='https://t.me/ThoughtsByVarma'>𝙹𝚘𝚒𝚗 𝙷𝚎𝚛𝚎</a>
-𝕃𝕚𝕓𝕣𝕒𝕣𝕪: 𝙿𝚢𝚛𝚘𝚐𝚛𝚊𝚖
-𝔻𝕒𝕥𝕒𝕓𝕒𝕤𝕖: 𝙼𝚘𝚗𝚐𝚘𝙳𝙱
-𝕊𝕖𝕣𝕧𝕖𝕣: 𝙷𝚎𝚛𝚘𝚔𝚞"""
+   
 
     AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
 
