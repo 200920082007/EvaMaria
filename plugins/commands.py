@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('Creator', url='https://t.me/VarMarvel')
+                InlineKeyboardButton('Developer', url='https://t.me/Varma2006')
             ],
             [
                 InlineKeyboardButton('Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -45,7 +45,7 @@ async def start(client, message):
             InlineKeyboardButton('➕ Add Ron To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('Inline Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Creator', url='https://t.me/VarMarvel')
+            InlineKeyboardButton('Developer', url='https://t.me/Varma2006')
             ],[
             InlineKeyboardButton('Help', callback_data='help'),
             InlineKeyboardButton('About', callback_data='about')
@@ -88,7 +88,7 @@ async def start(client, message):
             InlineKeyboardButton('➕ Add Ron To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('Inline Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Creator', url='https://t.me/VarMarvel')
+            InlineKeyboardButton('Developer', url='https://t.me/Varma2006')
             ],[
             InlineKeyboardButton('Help', callback_data='help'),
             InlineKeyboardButton('About', callback_data='about')
@@ -392,7 +392,7 @@ async def settings(client, message):
     st = await client.get_chat_member(grp_id, userid)
     if (
             st.status != "administrator"
-            and st.status != "creator"
+            and st.status != "developer"
             and str(userid) not in ADMINS
     ):
         return
@@ -507,7 +507,7 @@ async def save_template(client, message):
     st = await client.get_chat_member(grp_id, userid)
     if (
             st.status != "administrator"
-            and st.status != "creator"
+            and st.status != "developer"
             and str(userid) not in ADMINS
     ):
         return
