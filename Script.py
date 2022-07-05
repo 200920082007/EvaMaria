@@ -10,7 +10,7 @@ class script(object):
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
 ✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v2"""
-    VARMA_TXT = """𝔻𝕖𝕧𝕖𝕝𝕠𝕡𝕖𝕣: <a href='tg://user?:id=981115467'>𝚃𝚑𝚒𝚜 𝙿𝚎𝚛𝚜𝚘𝚗</a>
+  VARMA_TXT = """𝔻𝕖𝕧𝕖𝕝𝕠𝕡𝕖𝕣: <a href='tg://user?:id=981115467'>𝚃𝚑𝚒𝚜 𝙿𝚎𝚛𝚜𝚘𝚗</a>
 
 𝕊𝕦𝕡𝕡𝕠𝕣𝕥: <a href='https://t.me/ThoughtsByVarma'>𝙹𝚘𝚒𝚗 𝙷𝚎𝚛𝚎</a>
 
@@ -20,7 +20,7 @@ class script(object):
 
 𝕊𝕖𝕣𝕧𝕖𝕣: 𝙷𝚎𝚛𝚘𝚔𝚞"""
 
-    SOURCE_TXT = """<b>NOTE:</b>
+  SOURCE_TXT = """<b>NOTE:</b>
 - Ron is a open source project. 
 - Support - https://t.me/ThoughtsByVarma  
 
