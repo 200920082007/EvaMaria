@@ -25,24 +25,6 @@ async def showid(client, message):
             f"<b>➲ First Name:</b> {first}\n<b>➲ Last Name:</b> {last}\n<b>➲ Username:</b> {username}\n<b>➲ Telegram ID:</b> <code>{user_id}</code>\n<b>➲ Data Centre:</b> <code>{dc_id}</code>",
             quote=True
         )
-    elif query.data == "varma":
-        buttons = [[
-            InlineKeyboardButton('Marvel Series', url=f'https://t.me/TheCinematezSeries'),
-            InlineKeyboardButton('Marvel Movies', url=f'http://t.me/Devilsanus1'),
-            InlineKeyboardButton('MCU Movies', url=f'https://t.me/+BifVOhQZRh5iNTQ1'),
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        m=await query.message.reply_text("● ◌ ◌")
-        n=await m.edit("● ● ◌")
-        o=await n.edit("● ● ●")
-        await asyncio.sleep(1)
-        await o.delete()
-        await query.message.edit_text(
-            text=script.VARMA_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
     elif chat_type in ["group", "supergroup"]:
         _id = ""
         _id += (
@@ -146,19 +128,6 @@ async def who_is(client, message):
         )
     await status_message.delete()
 
-
-@Client.on_message(filters.command("underoos"))
-async def aboutme(client, message):
-        buttons= [[
-            InlineKeyboardButton('Others', callback_data='varma'),
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.VARMA_TXT.format(message.from_user.mention)
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
 
 @Client.on_message(filters.command(["imdb", 'search']))
 async def imdb_search(client, message):
